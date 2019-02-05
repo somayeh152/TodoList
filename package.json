@@ -1,0 +1,11 @@
+{
+  "name": "TodoList",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "3.3",
+    "bootstrap-rtl": "3.3",
+    "jquery": "^3.3.1"
+  }
+}

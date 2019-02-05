@@ -1,0 +1,254 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Arial',Tahoma;
+}
+
+body{
+  background-color: #e4e1e1;
+  color: #17191b;
+}
+
+#headtitle{
+  color: #005c1d;
+  font-weight: bold;
+  font-size: 28px;
+  display: block;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  /* text-shadow: 1px 1px 2px #005c1d; */
+}
+
+#holder>.row{
+  /* background-color: #005c1d; */
+  margin: 10px;
+  padding: 10px;
+}
+
+#holder li{
+  list-style-type: none;
+}
+
+.headgroup i{
+  color: #005c1d;
+  padding: 10px;
+}
+#bottom-box{
+  position: fixed;
+  bottom: 0;
+  background-color: #005c1d;
+  width: 100%;
+  min-height: 50px;
+  padding: 20px;
+  box-shadow: 1px 1px 3px #17191b;
+}
+
+#bottom-box form{
+  display: inline-block;
+  padding-left: 20px;
+}
+
+#bottom-box span{
+  color: #e4e1e1;
+  margin-left: 5px;
+  font-size: 15px;
+  /* font-weight: bold; */
+}
+
+#formmsg{
+  color: rgb(255, 165, 0);
+  margin-left: 5px;
+}
+
+#additem, #createItem, #cancelItem{
+  background-color: #5daa58;
+  border-color: transparent;
+  color: #e4e1e1;
+}
+
+#additem{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+#groupholder{
+   margin-bottom: 100px;
+}
+
+.group{
+  display: inline-block;
+  background-color: #5daa58;
+  border-radius: 7px;
+  padding: 15px;
+  margin: 10px;
+  width: 31%;
+  box-shadow: inset 0px 0px 6px #005c1d;
+  position: relative;
+}
+
+.group h3
+{
+  margin: 0px 0px 10px 0px;
+  display: inline-block;
+  font-weight: bold;
+  color: #005c1d;
+  font-size: 28px;
+}
+
+.group i{
+  float: right;
+}
+
+.group .holderitems li{
+  border-top: 1px solid #005c1d;
+  padding: 8px;
+  min-height: 100px;
+}
+
+.group .holderitems h4{
+  display: inline-block;
+  width: 80%;
+  word-wrap: break-word;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.group .holderitems input[type=checkbox]{
+  float: right;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.group .holderitems button{
+  float: right;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+.group .holderitems button i{
+  font-size: 8px;
+  letter-spacing: -3px;
+}
+
+.group .holderitems .taskdate{
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.modal-header {
+    padding: 10px 20px;
+    border-color: transparent;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #337ab7;
+    color: #fff;
+}
+.modal-header h4{
+  font-size: 16px;
+}
+.modal-body {
+    font-size: 16px;
+    padding: 20px 20px 0px 20px;
+    /* text-align: center; */
+}
+.modal-footer {
+    border-color: transparent;
+}
+.modal-dialog {
+  width: 500px;
+  /* margin: 30px auto; */
+}
+
+
+@media screen and (max-width: 768px) {
+  .group{
+    width: 46%;
+  }
+  .modal-dialog {
+    width: 400px;
+    margin: 30px auto;
+}
+}
+
+@media screen and (max-width: 425px) {
+  .group{
+    width: 95%;
+  }
+  .modal-dialog {
+    width: 300px;
+    margin: 30px auto;
+}
+  #additemform ul , #additemform select{
+    margin: 3px 0px 3px 0px;
+  }
+  #additem{
+    margin-bottom: 8px;
+  }
+}
+/*  ----- style for checkbox ------ */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  float: right;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
