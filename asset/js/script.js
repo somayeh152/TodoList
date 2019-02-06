@@ -117,7 +117,8 @@ function gettaskdate(){
 // --- changing the value of checkbox to done or pendding ----------------------
 
 // $(".check").click(function()
-$(document).on('click','.check',function(){
+$(document).on('click','.check',function()
+{
   c = $(this).val();
   if (c == 0) {
     $(this).parent(".switch").siblings(".deleteItem").attr("data-target","#delMessg2");
